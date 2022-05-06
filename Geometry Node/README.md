@@ -1,5 +1,21 @@
-*GEOMETRY NODE
+# GEOMETRY NODE
 
-**Connector
+## Connector
+
+![gn_connector](https://user-images.githubusercontent.com/54265936/167180946-129b6cb3-f25b-4e46-9e33-9a2e97b7b8ec.png)
+
 A GN to create an electronic connector.
-The pitch is standardized, 2.54 mm.
+
+- Pitch: 2.54 mm
+- Number of contacts: 
+  - min: 2
+  - max: unlimited
+- Number of rows:
+  - min: 1
+  - max: 2
+- Height (5 mm by default)
+- Wall Thickness adjustable
+- Cutout 
+- Shade Smooth
+- Align on the first contact or center
+- Materials (body and pins)
