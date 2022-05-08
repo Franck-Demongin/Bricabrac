@@ -2,6 +2,8 @@
 
 ## Connector
 
+_File: **gnx_electronic_connector.blend**_
+
 ![gn_connector](https://user-images.githubusercontent.com/54265936/167180946-129b6cb3-f25b-4e46-9e33-9a2e97b7b8ec.png)
 
 A GN to create an electronic connector.
@@ -21,6 +23,8 @@ A GN to create an electronic connector.
 - Materials (body and pins)
 
 ## LED
+
+_File: **gnx_electronic_led.blend**_
 
 ![gn_led](https://user-images.githubusercontent.com/54265936/167298487-b3c946e0-89fc-4692-b006-2c9f68ed447f.png)
 
