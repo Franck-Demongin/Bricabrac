@@ -22,6 +22,8 @@ A GN to create an electronic connector.
 
 ## LED
 
+![gn_led](https://user-images.githubusercontent.com/54265936/167298487-b3c946e0-89fc-4692-b006-2c9f68ed447f.png)
+
 A GN to create LED.
 
 - Pitch: 2.54 mm
@@ -31,3 +33,4 @@ A GN to create LED.
   - max : 25.5 mm
 - Color
 - Strength
+- Align anode or center
