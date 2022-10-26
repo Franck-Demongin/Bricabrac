@@ -38,3 +38,21 @@ A GN to create LED.
 - Color
 - Strength
 - Align anode or center
+
+## TEXT FOLLOW CURVE
+
+_File: **gnx_text_follow_curve.blend**_
+
+![Capture d’écran du 2022-10-26 15-19-57](https://user-images.githubusercontent.com/54265936/198037383-81834a18-58ca-4d09-9f80-6bd65c29d539.png)
+
+Add text on a curve easily.
+
+Options :
+  - Curve Radius
+  - Curve Reverse
+  - Curve Resolution
+  - String
+  - Text size
+  - Text orientation
+  - Speed (-10 to 10. 0 is stopped)
+  - Curve Rotation
