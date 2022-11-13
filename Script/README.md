@@ -29,6 +29,7 @@ _File: **export_gltf.py**_
 Export all visible objects in the scene of type MESH in single glTF file.
 
 Adjust PATH to export object in folder of your choice.
+
 On Linux:
 ```
 PATH = '/Path/to/folder' 
