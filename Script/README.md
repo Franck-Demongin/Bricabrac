@@ -18,5 +18,23 @@ y = 4
 # Nombre de tranche sur Z
 z = 4
 ```
-
 Select an object and run script.
+
+## Export glTF
+
+_File: **export_gltf.py**_
+
+![Export_glTF](https://user-images.githubusercontent.com/54265936/201516252-ba66d5d4-3395-40f5-9836-b45d949582ce.png)
+
+Export all visible objects in the scene of type MESH in single glTF file.
+
+Adjust PATH to export object in folder of your choice.
+On Linux:
+```
+PATH = '/Path/to/folder' 
+```
+
+On Windows:
+```
+PATH = 'C:/path/to/folder' # use /
+```
