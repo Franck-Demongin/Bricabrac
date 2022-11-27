@@ -56,3 +56,22 @@ Options :
   - Text orientation
   - Speed (-10 to 10. 0 is stopped)
   - Curve Rotation
+  
+## MODULAR BOX
+  
+_File: **gnx_modular_box.blend**_
+  
+![gnx_modular_box](https://user-images.githubusercontent.com/54265936/204155704-db854d14-fcad-412e-81bb-0b627485bc47.png)
+  
+Create and adjust modular box.
+  
+Options:
+  - Cell size
+  - Number cells on X and Y
+  - Cell height 
+  - Thickness
+  - Tenon width, thickness, wings lenght, Z offset
+  
+  
+
+  
