@@ -74,6 +74,8 @@ Options:
  
 ## CUBE BEVELLED
 
+_File: **gnx_cube_beveled.blend**_
+
 ![gnx_cube_beveled](https://user-images.githubusercontent.com/54265936/210273908-aa42daf8-05df-432e-b58c-dc01aa75c17d.png)
 
 A simple cube width a consistant bevel.
