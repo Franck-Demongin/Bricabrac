@@ -39,3 +39,14 @@ On Windows:
 ```
 PATH = 'C:/path/to/folder' # use /
 ```
+
+## Key Configuration
+
+_File: **keyconfig_list.py**_
+
+![script_keyconfig_list](https://user-images.githubusercontent.com/54265936/213939029-6f81af65-0231-4578-b709-6091bccd549e.png)
+
+List all shortcuts in a text file.
+
+Save .blend file before run script.  
+A file named kc.txt will be created in the same folder.
