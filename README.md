@@ -28,4 +28,4 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Object slicer [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Script/object_slicer.py)
 - Export glTF [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Script/export_gltf.py)
 - Key Configuration [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Script/keyconfig_list.py)
-- Auto Bake Indirect Lighting [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/blob/main/Script/auto_bake_indirect_lighting.py)
+- Auto Bake Indirect Lighting [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Script/auto_bake_indirect_lighting.py)
