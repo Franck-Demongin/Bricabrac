@@ -50,3 +50,15 @@ List all shortcuts in a text file.
 
 Save .blend file before run script.  
 A file named kc.txt will be created in the same folder.
+
+## Auto Bake Indirect Lighting
+
+_File: **auto_bake_indirect_lighting.py**_
+
+![script_auto_bake_indirect_lighting](https://user-images.githubusercontent.com/54265936/214378253-8c246d12-3e25-4f4c-b143-d9a785edd029.png)
+
+Export animation to PNG images sequence. Images are saved in **_Output Path_**.  
+Bake indirect lighting before render each frame.
+
+Images are displayed in UI (a 3D View or an Image Editor must be open) and the render coulb be interrupt by press 'ESC'.
+
