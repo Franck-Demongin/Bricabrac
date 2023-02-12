@@ -79,6 +79,18 @@ _File: **gnx_cube_beveled.blend**_
 ![gnx_cube_beveled](https://user-images.githubusercontent.com/54265936/210273908-aa42daf8-05df-432e-b58c-dc01aa75c17d.png)
 
 A simple cube width a consistant bevel.
+
+## Bridge Creator
+
+_File: **gnx_bridge.blend**_
+
+![gnx_bridge](https://user-images.githubusercontent.com/54265936/215406958-c8d2f16b-42dc-483b-9ab5-bdde91e6b285.png)
+
+A Geometry Node to create some bridges. The table and the pillar are configurable.  
+The bridge follows a curve that you can draw and modify freely.  
+The UVs of the road are exported to add easyly some materials.
+
+
   
   
 

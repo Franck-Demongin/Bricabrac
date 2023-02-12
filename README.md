@@ -20,6 +20,7 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Text Follow Curve [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_text_follow_curve.blend)
 - Modular Box [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_modular_box.blend)
 - Cube Bevelled [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_cube_beveled.blend)
+- Bridge Generator [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_bridge.blend)
 
 
 
