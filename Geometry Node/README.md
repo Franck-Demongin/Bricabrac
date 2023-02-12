@@ -91,6 +91,15 @@ The bridge follows a curve that you can draw and modify freely.
 The UVs of the road are exported to add easyly some materials.
 
 
+## Chain
+
+_File: **gnx_chain.blend**_
+
+![gnx_chain](https://user-images.githubusercontent.com/54265936/218316547-37950824-22c5-4a52-941f-c8de3bc6d11d.png)
+
+Easily create some chains. Draw a curve, add the Geometry Node and parameter the size and the form of the link.
+
+
   
   
 
