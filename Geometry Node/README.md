@@ -90,7 +90,6 @@ A Geometry Node to create some bridges. The table and the pillar are configurabl
 The bridge follows a curve that you can draw and modify freely.  
 The UVs of the road are exported to add easyly some materials.
 
-
 ## Chain
 
 _File: **gnx_chain.blend**_
@@ -99,8 +98,13 @@ _File: **gnx_chain.blend**_
 
 Easily create some chains. Draw a curve, add the Geometry Node and parameter the size and the form of the link.
 
+## Cubes Lattice
 
-  
+_File: **gnx_cubes_lattice.blend**_
+
+![gnx_cubes_lattice](https://user-images.githubusercontent.com/54265936/221406443-0e71dec8-f63f-4581-b4e1-fbcacc203149.png)
+
+ Geometric lattice of cubes. Choose the X and Y repetition, the size of the base cube and two materials.
   
 
   
