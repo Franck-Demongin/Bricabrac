@@ -22,8 +22,8 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Cube Bevelled [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_cube_beveled.blend)
 - Bridge Generator [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_bridge.blend)
 - Chain [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_chain.blend)
-
-
+- Cubes Lattice [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_cubes_lattice.blend)
+- Moebius Strip [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_moebius.blend)
 
 ## [Script](/Script)
 
