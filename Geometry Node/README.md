@@ -105,6 +105,16 @@ _File: **gnx_cubes_lattice.blend**_
 ![gnx_cubes_lattice](https://user-images.githubusercontent.com/54265936/221406443-0e71dec8-f63f-4581-b4e1-fbcacc203149.png)
 
  Geometric lattice of cubes. Choose the X and Y repetition, the size of the base cube and two materials.
+ 
+## Moebius
+ 
+_File: **gnx_moebius.blend**_
+ 
+![gnx_moebius](https://user-images.githubusercontent.com/54265936/221566424-1c66b1e6-e5a5-4942-bd5e-b31eda1593e5.png)
+ 
+Create Mobius strip from any cyclic curve. Adjust widnes and thickness, control tilt and merge threshold.
+
+ 
   
 
   
