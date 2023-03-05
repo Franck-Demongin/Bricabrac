@@ -17,3 +17,5 @@ _File: **nx_color-ramp.blend**_
 Use it to get a dynamic color ramp.  
 Choose colors and their stop position.  
 Switch between 4 interpolations types: Linear, Smooth, Smoother and Constant.
+
+_This nodes group was inspired by the video of Jose Martinez: https://youtu.be/3Eqm4I0Myg4_
