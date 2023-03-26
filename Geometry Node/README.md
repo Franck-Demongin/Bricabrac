@@ -114,6 +114,18 @@ _File: **gnx_moebius.blend**_
  
 Create Mobius strip from any cyclic curve. Adjust widnes and thickness, control tilt and merge threshold.
 
+## Screw, Twist and Bend
+
+_Files:_
+- _**gnx_screw.blend**_
+- _**gnx_twist.blend**_
+- _**gnx_bend.blend**_
+
+![gnx_screw-twist-bend](https://user-images.githubusercontent.com/54265936/227785548-ae4d268e-c819-4a6f-bb21-688c504322b4.png)
+
+3 geometry nodes groups to emulate the modifier Screw and the options Twist and Bend of the modifier Simple Deform.
+
+
  
   
 
