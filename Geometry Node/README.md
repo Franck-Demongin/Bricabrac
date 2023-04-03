@@ -125,6 +125,16 @@ _Files:_
 
 3 geometry nodes groups to emulate the modifier Screw and the options Twist and Bend of the modifier Simple Deform.
 
+## Blend Curves
+
+_File: **gnx_blend_curves.blend**_
+
+![gnx_blend_curves](https://user-images.githubusercontent.com/54265936/229469366-de0d2efb-a8ac-45d4-ba09-2ca453146091.png)
+
+Blend to curves together. Choose the number of steps, the resolution and the thickness of the curve.
+
+
+
 
  
   
