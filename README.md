@@ -24,6 +24,10 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Chain [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_chain.blend)
 - Cubes Lattice [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_cubes_lattice.blend)
 - Moebius Strip [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_moebius.blend)
+- Screw [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_screw.blend)
+- Twist [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_twist.blend)
+- Bend [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_bend.blend)
+- Blend Curves [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_blend_curves.blend)
 
 ## [Script](/Script)
 
