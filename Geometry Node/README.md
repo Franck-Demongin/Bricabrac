@@ -135,7 +135,7 @@ Blend two curves together. Choose the number of steps, the resolution and the th
 
 ## Menger Sponge
 
-![gnx_blend_curves](https://user-images.githubusercontent.com/54265936/229469366-de0d2efb-a8ac-45d4-ba09-2ca453146091.png)
+![gn_menger_sponge](https://github.com/Franck-Demongin/Bricabrac/assets/54265936/120bd401-816d-419c-a887-c9626ed6a18d)
 
 Create a Menger Sponge and choose the level of repetition.
 Can you pass above level 6?
