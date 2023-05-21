@@ -28,6 +28,7 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Twist [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_twist.blend)
 - Bend [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_bend.blend)
 - Blend Curves [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_blend_curves.blend)
+- Menger Sponge [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_menger_sponge.blend)
 
 ## [Script](/Script)
 
