@@ -131,7 +131,7 @@ _File: **gnx_blend_curves.blend**_
 
 ![gnx_blend_curves](https://user-images.githubusercontent.com/54265936/229469366-de0d2efb-a8ac-45d4-ba09-2ca453146091.png)
 
-Blend to curves together. Choose the number of steps, the resolution and the thickness of the curve.
+Blend two curves together. Choose the number of steps, the resolution and the thickness of the curve.
 
 ## Menger Sponge
 
