@@ -14,9 +14,19 @@
 import bpy
 from mathutils import Vector
 
-copy = True
+copy = False
 
-def split_seams(context, obj):
+def poll(context):
+    obj = context.object
+    if obj is None or obj.type != 'MESH':
+        raise TypeError("An object of type MESH must be selected")
+    
+    return True
+
+def split_seams(obj):
+    """
+    Split edge seams
+    """
 
     faces = obj.data.polygons
     edges = obj.data.edges
@@ -31,7 +41,7 @@ def split_seams(context, obj):
     bpy.ops.mesh.select_mode(type='EDGE')
     bpy.ops.object.mode_set(mode='OBJECT')
         
-    for e in obj.data.edges:
+    for e in edges:
         e.select = e.use_seam    
     
     bpy.ops.object.mode_set(mode='EDIT')
@@ -39,6 +49,9 @@ def split_seams(context, obj):
     bpy.ops.object.mode_set(mode='OBJECT')
 
 def unwrap_in_3dview(obj):
+    """
+    Unfold the mesh according to its UVs
+    """
         
     for f in obj.data.polygons:
         if f.index == 0:
@@ -63,31 +76,42 @@ def unwrap_in_3dview(obj):
             uv_co = obj.data.uv_layers.active.data[loop_idx].uv
             obj.data.vertices[vert_idx].co = Vector((uv_co.x, uv_co.y, 0)) * scale
         
-
-def get_mesh(context, copy):
-    obj = context.object
-    if obj is None or obj.type != 'MESH':
-        raise TypeError("An object of type MESH must be active")
-    obj.select_set(True)
-    return duplicate(obj, copy), obj.location.copy()
-    
 def duplicate(obj, copy):
+    """
+    Duplicate the object if copy is True
+    """
+    
     if copy:
         bpy.ops.object.duplicate_move()
         obj = bpy.context.object
     return obj
 
+def get_object(context, copy):
+    """
+    Return object or copy and initial location if type is mesh or raise an TypeError
+    """
+    
+    bpy.ops.object.mode_set(mode='OBJECT')
+    obj = context.object
+    obj.select_set(True)
+    return duplicate(obj, copy), obj.location.copy()
+    
 def position_object(obj, base_loc):
+    """
+    Set the origin of the object to the geometry and set the position
+    """
+    
     bpy.ops.object.origin_set(type='ORIGIN_GEOMETRY', center='MEDIAN')
     obj.location.x = base_loc.x
     obj.location.y = base_loc.y
         
 def main():
-    bpy.ops.object.mode_set(mode='OBJECT')
     context = bpy.context
+
+    poll(context)
     
-    obj, base_loc = get_mesh(context, copy)  
-    split_seams(context, obj)
+    obj, base_loc = get_object(context, copy)  
+    split_seams(obj)
     unwrap_in_3dview(obj)    
     position_object(obj, base_loc)
 
