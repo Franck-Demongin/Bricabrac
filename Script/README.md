@@ -69,7 +69,7 @@ _File: **unwrap_in_3dview.py**_
 ![script_unwrap_in_3dview](https://github.com/Franck-Demongin/Bricabrac/assets/54265936/4b7d0618-d619-4b14-b00e-d552cb1bc368)
 
 Allows you to unfold a mesh following these UVs in the 3D view. 
-For meshes with seams (closed meshes like the cube), select all the seams in Edit mode and do a Split Edges (Edges selection, right click > Split Edges).
+Add seams and unwrap your mesh before run the script.
 The _copy_ variable at the beginning of the script can be set to False or True. If it is True, a copy of the object is made before unfolding.
 
 
