@@ -72,15 +72,6 @@ Allows you to unfold a mesh following these UVs in the 3D view.
 Add seams and unwrap your mesh before run the script.
 The _copy_ variable at the beginning of the script can be set to False or True. If it is True, a copy of the object is made before unfolding.
 
-## Upscale render with Real-ESRGAN
-
-_File: **upscale_real_esrgan.py**_
-
-![script_upscale_real-esrgan](https://github.com/Franck-Demongin/Bricabrac/assets/54265936/a8d59e53-9f57-4c5f-9322-2b9f1f3bfce4)
-
-This script use xinntao/Real-ESRGAN-ncnn-vulkan to upscale the images
-You can download it from : [# SCRIPT
-
 ## Object Slicer
 
 _File: **object_slicer.py**_
@@ -159,10 +150,17 @@ _File: **upscale_real_esrgan.py**_
 
 ![script_upscale_real-esrgan](https://github.com/Franck-Demongin/Bricabrac/assets/54265936/a8d59e53-9f57-4c5f-9322-2b9f1f3bfce4)
 
-This script use xinntao/Real-ESRGAN-ncnn-vulkan to upscale the images
+This script use xinntao/Real-ESRGAN-ncnn-vulkan to upscale the render image.
 You can download it from : [xinntao/Real-ESRGAN-ncnn-vulkan/releases](https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/releases)
 Choose release for your operating system, unzip the file on your hard drive.
 
 
-
-
+### Usage
+In the script, update path_to_real_esrgan to the executable.
+Choose a scale from 2, 3 or 4 
+The render resolution will be divided by this value and then the images scaled by the same ratio.
+For example, if the render resolution is 1980x1080 px and the scale is 4, the script render each frame at 480x270 px and
+the final images are upscaled by 4 to make 1980x1080 px.
+The script create a render folder in the same directory of the blend file. It will fail if the blend file is not saved.
+The render folder name is to the form : blendfile_name(without extension).
+The upscaled images are in a sub-folder named like scale selected. Ex : x4 or x3
