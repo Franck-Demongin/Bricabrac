@@ -37,3 +37,4 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Key Configuration [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Script/keyconfig_list.py)
 - Auto Bake Indirect Lighting [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Script/auto_bake_indirect_lighting.py)
 - Unwrap in 3D View [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Script/unwrap_in_3dview.py)
+- Upscale with Real-ESRGAN [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Script/upscale_real_esrgan.py)
