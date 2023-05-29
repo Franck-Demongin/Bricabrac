@@ -22,6 +22,7 @@ import subprocess
 import bpy
 
 # path to realesrgan-ncnn-vulkan executable.
+# on Linux render the file executable
 # on Windows, use "/" or "\\" in path
 #path_to_real_esrgan = "C:/Users/franck/Documents/Dvp/Real-ESRGAN/realesrgan-ncnn-vulkan.exe"
 path_to_real_esrgan = "/home/franck/Softs/Real-ESRGAN/realesrgan-ncnn-vulkan"
@@ -33,6 +34,16 @@ scale = 4 # 2, 3 or 4
 # Render animation (True) or current frame (False)
 render_animation = False
 
+# model
+models = [
+    'realesrgan-x4plus',        # 0
+    'realesrnet-x4plus',        # 1
+    'realesrgan-x4plus-anime',  # 2
+    'realesr-animevideov3'      # 3
+]
+model = 0
+
+
 def get_file_path():
     if not bpy.data.is_saved:
         raise IOError('The file must be saved')
@@ -40,13 +51,10 @@ def get_file_path():
     filepath = bpy.data.filepath
     return os.path.basename(filepath), os.path.dirname(filepath)
 
-def make_dir(dir):
-    if not os.path.isdir(dir):
-        os.mkdir(dir)
-    
 def create_dir(dir_path, dir_name):
     dir = os.path.join(dir_path, dir_name)
-    make_dir(dir)    
+    if not os.path.isdir(dir):
+        os.mkdir(dir) 
     return dir
 
 def upscale(input, output, scale):
@@ -57,14 +65,17 @@ def upscale(input, output, scale):
         "-o", 
         output,
         "-s",
-        str(scale)
+        str(scale),
+        "-n",
+        models[model]
     ])
         
 def main():
+    scene = bpy.context.scene
+    
     file_name, dir_path = get_file_path()
     render_dir = create_dir(dir_path, f"render_{file_name[:-6]}")
     
-    scene = bpy.context.scene
     frame_current = scene.frame_current
     extension = scene.render.file_extension
     
@@ -79,22 +90,21 @@ def main():
     scene.render.resolution_x = round(initial_x / scale)
     scene.render.resolution_y = round(initial_y / scale)
     
-    render_upscaled = create_dir(render_dir, f"x{scale}")
+    render_upscaled = create_dir(render_dir, f"{models[model]}_x{scale}")
     
     scene['render_dir'] = render_dir
     scene['render_upscaled'] = render_upscaled
     scene['scale'] = scale
-    scene['resolution_x'] = initial_x
-    scene['resolution_y'] = initial_y
     scene['render_animation'] = render_animation
     scene['frame_current'] = scene.frame_current
     scene['extension'] = extension
     
     bpy.ops.render.render('INVOKE_DEFAULT', animation=render_animation, write_still= not render_animation)
     
+    scene.render.resolution_x = initial_x
+    scene.render.resolution_y = initial_y
+    
 def render_complete(scene):
-    scene.render.resolution_x = scene['resolution_x']
-    scene.render.resolution_y = scene['resolution_y']
     print('Render Complete')
     print('---------------')
     print('Start upscale...')
