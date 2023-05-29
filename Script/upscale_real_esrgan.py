@@ -36,18 +36,18 @@ render_animation = False
 
 # model
 models = [
-    'realesrgan-x4plus',        # 0
-    'realesrnet-x4plus',        # 1
+    'realesr-animevideov3',     # 0
+    'realesrgan-x4plus',        # 1
     'realesrgan-x4plus-anime',  # 2
-    'realesr-animevideov3'      # 3
 ]
-model = 0
+model_idx = 2
 
+#######################
 
-def get_file_path():
-    if not bpy.data.is_saved:
-        raise IOError('The file must be saved')
-    
+def poll():
+    return bpy.data.is_saved
+
+def get_file_path():    
     filepath = bpy.data.filepath
     return os.path.basename(filepath), os.path.dirname(filepath)
 
@@ -57,9 +57,15 @@ def create_dir(dir_path, dir_name):
         os.mkdir(dir) 
     return dir
 
-def upscale(input, output, scale):
+def upscale(executable, model, input, output, scale):
+    print(executable)
+    print(model)
+    print(input)
+    print(output)
+    print(scale)
+    
     subprocess.call([
-        path_to_real_esrgan, 
+        executable, 
         "-i", 
         input,
         "-o", 
@@ -67,65 +73,100 @@ def upscale(input, output, scale):
         "-s",
         str(scale),
         "-n",
-        models[model]
+        model
     ])
+
+def render_complete(scene):
+    settings = scene.upscale_settings
+    
+    scene.render.resolution_x = settings.initial_x
+    scene.render.resolution_y = settings.initial_y
+    
+    print('Render Complete')
+    print('---------------')
+    print('Start upscale...')
+    print('---------------')
+    
+    input = settings.render_dir
+    output = settings.render_upscaled
+    if not settings.render_animation:
+        name = f"image_{settings.frame_current:04d}{settings.extension}"
+        input = os.path.join(input, name)
+        output = os.path.join(output, name)
+            
+    upscale(
+        settings.executable,
+        settings.model,
+        input, 
+        output,
+        settings.scale
+    )
+    print('---------------')    
+    print("images upscaled")
         
-def main():
+def main(executable, model, scale, render_animation):
     scene = bpy.context.scene
+    settings = scene.upscale_settings
     
     file_name, dir_path = get_file_path()
     render_dir = create_dir(dir_path, f"render_{file_name[:-6]}")
     
-    frame_current = scene.frame_current
-    extension = scene.render.file_extension
-    
     output = os.path.join(render_dir, 'img_')
     if not render_animation:
-        output = os.path.join(render_dir, f"image_{frame_current:04d}")
+        output = os.path.join(render_dir, f"image_{scene.frame_current:04d}")
     scene.render.filepath = os.path.join(render_dir, output)
+    
+    render_upscaled = create_dir(render_dir, f"{model}_x{scale}")
     
     initial_x = scene.render.resolution_x
     initial_y = scene.render.resolution_y
     
     scene.render.resolution_x = round(initial_x / scale)
     scene.render.resolution_y = round(initial_y / scale)
+        
+    settings.executable = executable
+    settings.model = model
+    settings.scale = scale
+    settings.render_animation = render_animation
+    settings.render_dir = render_dir
+    settings.render_upscaled = render_upscaled
+    settings.frame_current = scene.frame_current
+    settings.extension = scene.render.file_extension
+    settings.initial_x = initial_x
+    settings.initial_y = initial_y
+        
+    bpy.ops.render.render('INVOKE_DEFAULT', animation=render_animation, write_still=True)
+   
+       
+class UpscaleSettings(bpy.types.PropertyGroup):
+    executable: bpy.props.StringProperty()
+    model: bpy.props.StringProperty()
+    scale: bpy.props.IntProperty(default=4)
+    render_animation : bpy.props.BoolProperty()
+    render_dir: bpy.props.StringProperty()
+    render_upscaled: bpy.props.StringProperty()
+    frame_current : bpy.props.IntProperty()
+    extension : bpy.props.StringProperty()
+    initial_x: bpy.props.IntProperty()
+    initial_y : bpy.props.IntProperty()
     
-    render_upscaled = create_dir(render_dir, f"{models[model]}_x{scale}")
+
+bpy.utils.register_class(UpscaleSettings)
+
+if __name__ == "__main__":    
+    bpy.types.Scene.upscale_settings = bpy.props.PointerProperty(type=UpscaleSettings)
+
+    for h in bpy.app.handlers.render_complete:
+        if h.__name__ == 'render_complete':
+            bpy.app.handlers.render_complete.remove(h)
+    bpy.app.handlers.render_complete.append(render_complete)
     
-    scene['render_dir'] = render_dir
-    scene['render_upscaled'] = render_upscaled
-    scene['scale'] = scale
-    scene['render_animation'] = render_animation
-    scene['frame_current'] = scene.frame_current
-    scene['extension'] = extension
-    
-    bpy.ops.render.render('INVOKE_DEFAULT', animation=render_animation, write_still= not render_animation)
-    
-    scene.render.resolution_x = initial_x
-    scene.render.resolution_y = initial_y
-    
-def render_complete(scene):
-    print('Render Complete')
-    print('---------------')
-    print('Start upscale...')
-    print('---------------')
-    
-    input = scene['render_dir']
-    output = scene['render_upscaled']
-    if not scene['render_animation']:
-        name = f"image_{scene['frame_current']:04d}{scene['extension']}"
-        input = os.path.join(input, name)
-        output = os.path.join(output, name)
-            
-    upscale(
-        input, 
-        output,
-        scene['scale']
+    if not poll():
+        raise IOError('The file must be saved')
+        
+    main(
+        executable=path_to_real_esrgan,
+        model=models[model_idx],
+        scale=scale,
+        render_animation=render_animation
     )
-    print('---------------')    
-    print("images upscaled")
-      
-if __name__ == "__main__":
-    if not render_complete.__name__ in [hand.__name__ for hand in bpy.app.handlers.render_complete]:
-        bpy.app.handlers.render_complete.append(render_complete)
-    main()
