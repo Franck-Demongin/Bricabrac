@@ -146,7 +146,7 @@ Can you pass above level 6?
 
 Langton's ant is a two-dimensional Turing machine with a very simple set of rules but complex emergent behavior.
 
-This geometric knot makes it easy to recreate.  
+This Geometrie Node makes it easy to recreate.  
 Choose grid size, starting point and colors. You can also add one or two obstacles to modify your ant's behavior.
 
 
