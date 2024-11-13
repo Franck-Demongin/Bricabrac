@@ -140,6 +140,14 @@ Blend two curves together. Choose the number of steps, the resolution and the th
 Create a Menger Sponge and choose the level of repetition.
 Can you pass above level 6?
 
+## Langton's ant
+
+![gnx_langton_ant](https://github.com/user-attachments/assets/62276fb1-a127-46ba-8d91-975d0f2f4d55)
+
+Langton's ant is a two-dimensional Turing machine with a very simple set of rules but complex emergent behavior.
+
+This geometric knot makes it easy to recreate.  
+Choose grid size, starting point and colors. You can also add one or two obstacles to modify your ant's behavior.
 
 
 
