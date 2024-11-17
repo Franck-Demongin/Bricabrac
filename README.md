@@ -30,6 +30,7 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Blend Curves [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_blend_curves.blend)
 - Menger Sponge [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_menger_sponge.blend)
 - Langton's ant [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_langton_ant.blend)
+- Flag [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_flag.blend)
 
 ## [Script](/Script)
 
