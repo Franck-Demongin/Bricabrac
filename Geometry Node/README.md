@@ -157,6 +157,13 @@ _**NEW** you can choose to display or not the ant and choose this color._
 
 A simple flag waving in the wind.
 
+## Conway's Game Of Life
+
+![gnx_game_of_life](https://github.com/user-attachments/assets/781b1164-fcb5-49a4-8c6a-19fdce155c41)
+
+A cellular simulation based on the rules of Conway's Game Of Life.
+
+
 
 
 
