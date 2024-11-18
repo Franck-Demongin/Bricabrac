@@ -142,12 +142,22 @@ Can you pass above level 6?
 
 ## Langton's ant
 
-![gnx_langton_ant](https://github.com/user-attachments/assets/62276fb1-a127-46ba-8d91-975d0f2f4d55)
+![gnx_langton_ant](https://github.com/user-attachments/assets/186ec981-c84a-4263-b0ea-667ca24485d3)
 
 Langton's ant is a two-dimensional Turing machine with a very simple set of rules but complex emergent behavior.
 
 This Geometrie Node makes it easy to recreate.  
 Choose grid size, starting point and colors. You can also add one or two obstacles to modify your ant's behavior.
+
+_**NEW** you can choose to display or not the ant and choose this color._
+
+## Flag
+
+![gnx_flag](https://github.com/user-attachments/assets/b2061b9b-176c-4be2-bacb-db0ee8e2d26e)
+
+A simple flag waving in the wind.
+
+
 
 
 
