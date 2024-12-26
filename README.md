@@ -32,6 +32,8 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Langton's ant [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_langton_ant.blend)
 - Flag [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_flag.blend)
 - Conway's Game Of Life [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_game_of_life.blend)
+- Mockup [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_mockup.blend)
+- Articulation [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_articulation.blend)
 
 ## [Script](/Script)
 
