@@ -163,6 +163,17 @@ A simple flag waving in the wind.
 
 A cellular simulation based on the rules of Conway's Game Of Life.
 
+## Mockup
+
+![gnx_mockup](https://github.com/user-attachments/assets/bdae0884-6811-445e-be05-19f10647c12f)
+
+A simple way to present your graphic creations to your customers.
+
+## Articulation
+
+![gnx_articulation](https://github.com/user-attachments/assets/77ba21cf-1b26-442e-a7fe-1a986b49bf83)
+
+Articulated panels.
 
 
 
