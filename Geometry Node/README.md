@@ -175,6 +175,14 @@ A simple way to present your graphic creations to your customers.
 
 Articulated panels.
 
+## Corner
+
+![gnx_corner](https://github.com/user-attachments/assets/59ed9de4-eb07-4b63-a649-09bcf81bef7c)
+
+Corner your presentations, flyers and posters.
+
+
+
 
 
 
