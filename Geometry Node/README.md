@@ -187,6 +187,13 @@ Corner your presentations, flyers and posters.
 
 Create bookcases and automatically fill them with books of random proportions.
 
+## Knot
+
+![gnx_knot](https://github.com/user-attachments/assets/a0626ddc-4392-49cc-a976-5be8b74c1e4f)
+
+Also known as the “trefoil knot”, a geometrical figure in the shape of a cloverleaf.
+
+
 
 
 
