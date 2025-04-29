@@ -181,6 +181,13 @@ Articulated panels.
 
 Corner your presentations, flyers and posters.
 
+## Bookcase
+
+![gnx_bookcase](https://github.com/user-attachments/assets/7333963f-3efd-4a9f-acc1-8002a0fe4de7)
+
+Create bookcases and automatically fill them with books of random proportions.
+
+
 
 
 
