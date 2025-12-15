@@ -36,6 +36,7 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Articulation [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_articulation.blend)
 - Corner [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_corner.blend)
 - Bookcase [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_bookcase.blend)
+- Knot [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_knot.blend)
 
 ## [Script](/Script)
 
