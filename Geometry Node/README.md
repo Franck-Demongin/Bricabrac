@@ -193,6 +193,22 @@ Create bookcases and automatically fill them with books of random proportions.
 
 Also known as the “trefoil knot”, a geometrical figure in the shape of a cloverleaf.
 
+## Audio Level
+
+![gnx_audio-level](https://github.com/user-attachments/assets/e61a8d44-d59d-4ba4-a16a-22dd4972a0cb)
+
+Easily visualize the levels of an audio track.
+
+1. Add an empty element
+2. Add a keyframe on the X value of the empty
+3. In the Graph Editor, select the X Location value, then bake the audio track: Channel menu > Sound to Samples
+4. Add a layer with a GeometryNode modifier with the GN GNX_AudioLevel (add it from the asset library). Add the AudioLevel material to it.
+5. In the GN options, select the empty, set the colors, percentages, and characteristics of the level bar (number of segments, size, and space between segments).
+
+In Rendered mode, play the animation to see the level bar animate in time with the audio track.  
+To hear the sound simultaneously, add the same audio track to the Video Sequencer.
+
+
 
 
 
