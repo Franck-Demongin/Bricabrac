@@ -217,6 +217,18 @@ Create an accordion with your panels:
 - Choose the number of repetitions
 - Open and close the entire panel in accordion style
 
+## Neural Network
+
+<img width="1920" height="957" alt="gnx_neural_network" src="https://github.com/user-attachments/assets/ff487c17-0eb0-4eb6-a05a-9e2377b7aab0" />
+
+This Geometry node allows you to quickly create neural networks consisting of layers of neurons connected by synapses.  
+The node interface allows you to select the attributes of:
+- Neurons (radius, resolution, material)
+- Layers (spacing between neurons and spacing between each layer)
+- Synapses (resolution, radius, and material)
+- Animation (on/off, duration between layers, and delay).
+
+
 
 
 
