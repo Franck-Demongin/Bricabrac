@@ -208,6 +208,16 @@ Easily visualize the levels of an audio track.
 In Rendered mode, play the animation to see the level bar animate in time with the audio track.  
 To hear the sound simultaneously, add the same audio track to the Video Sequencer.
 
+## Accordion
+
+<img width="1920" height="957" alt="gnx_accordion" src="https://github.com/user-attachments/assets/d38711cf-9fc2-412d-a6cc-ff0af8103ead" />
+
+Create an accordion with your panels:
+- Select the panel
+- Choose the number of repetitions
+- Open and close the entire panel in accordion style
+
+
 
 
 
