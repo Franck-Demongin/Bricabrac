@@ -39,6 +39,7 @@ Retrieve in this repository someone of my tests with Blender Geometry Node, Blen
 - Knot [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_knot.blend)
 - AudioLevel [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_audio-level.blend)
 - Accordion [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_accordion.blend)
+- Neural Network [<img src="https://img.shields.io/badge/Download-grey" />](https://github.com/Franck-Demongin/Bricabrac/raw/main/Geometry%20Node/gnx_neural_network.blend)
 
 ## [Script](/Script)
 
